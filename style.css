@@ -1,0 +1,237 @@
+/*https://appbrewery.github.io/capstone-2-example*/
+
+body
+{
+    background-color: whitesmoke;
+    text-align: center;
+    color: dimgray;
+    font-family: "Montserrat", sans-serif ;
+    margin: 0;
+}
+
+p{
+    font-size: 1rem;
+    margin: 0 auto 30px auto;
+}
+
+hr{
+    border: dotted #cae8d4 8px;
+    border-bottom: none;
+    width: 5%;
+    margin: 80px auto;
+}
+
+a {
+    color: #243642;
+    font-family: "Montserrat", sans-serif;
+    margin: 10px 20px;
+    text-decoration: none;
+}
+  
+a:hover {
+    color: #629584;
+}
+
+h1
+{
+    font-family: "Sacramento", cursive;
+    color: #387478;
+    font-size: 5.5rem;
+    margin: 50px auto 0 auto;
+}
+
+h2
+{
+    color: #387478;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0px auto 30px auto;
+}
+
+h3{
+    text-align: center;
+    color: #629584;
+}
+
+.top-bulb
+{
+    transform: rotate(20deg);
+    position: absolute;
+    right: 200px;
+    top: 30px;  
+}
+.bottom-bulb
+{
+    transform: rotate(-20deg);
+    position: absolute;
+    left: 200px;
+    bottom: 30px;
+}
+
+.first-container
+{
+    position: relative;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background-color: #E2F1E7;
+    margin-bottom: 50px;
+}
+
+.second-container
+{
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.first-container > img
+{
+    height: 150px;
+    width: 150px;
+}
+
+.second-container  img{
+    height: auto;
+    max-width: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 20px;
+
+}
+
+.college, .Schooling > p{
+    font-size: 1rem;
+    margin: 0;
+    text-align: center;
+}
+
+.skills{
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.skills > *{
+    flex: 1;
+}
+
+@media (max-width: 800px) {
+    .skills {
+        flex-direction: column;
+        height: 100%;
+    }    
+}
+
+.education{
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.education > *{
+    flex: 1;
+}
+
+@media (max-width: 950px){
+    .education {
+        flex-direction: column;
+        height: 100%;
+    }
+}
+
+.bottom-container{ 
+    background: linear-gradient(300deg, #F6D6D6 ,#F6F7C4 , #A1EEBD, #7BD3EA);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+    margin-top: 40px;
+}
+  
+@keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+}
+
+}
+.contact-message {
+    width: 40%;
+    margin: 40px auto 40px;
+}
+
+.btn {
+    background: #629584;
+    background-image: -webkit-linear-gradient(top, #629584, #243642);
+    background-image: -moz-linear-gradient(top, #629584, #243642);
+    background-image: -ms-linear-gradient(top, #629584, #243642);
+    background-image: -o-linear-gradient(top, #629584, #243642);
+    background-image: linear-gradient(to bottom, #629584, #243642);
+    -webkit-border-radius: 8;
+    -moz-border-radius: 8;
+    border-radius: 8px;
+    font-family: "Montserrat", sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+  
+.btn:hover {
+    background: #629584;
+    color: #ffffff;
+    text-decoration: none;
+}  
+  
+.copyright {
+    color: #629584;
+    font-size: 0.75rem;
+    padding: 20px 0;
+}
+  
+.bottom-container {
+    padding: 50px 0 20px;
+}
+
+@media (max-width: 768px) { /* Adjust breakpoint as needed */
+    .contact-message {
+        width: 80%; /* Increase width for better visibility */
+    }
+    .first-container > img{
+       height: 80px;
+       width: 80px;
+    }
+    .first-container{
+       padding-top: 100px;
+       padding-bottom: 100px;
+    }
+    
+}
+
+@media (max-width: 620px) { /* Adjust breakpoint as needed */
+    h1 {
+        font-size: 4rem;
+    }
+    h2{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 400px) { /* Adjust breakpoint as needed */
+    h1 {
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 0.75rem;
+    }
+}
